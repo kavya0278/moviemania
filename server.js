@@ -5,7 +5,7 @@ let passport = require('passport'); //core passport library initialized here
 let app = express();
 
 
-let connectionString = 'mongodb+srv://kavyaila07:kavyaila07@cluster0.phrb7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+let connectionString = 'mongodb+srv://kavyaila07:kavyaila07@cluster0.phrb7.mongodb.net/';
 let mongoose = require("mongoose");
 mongoose.connect(connectionString);
 
