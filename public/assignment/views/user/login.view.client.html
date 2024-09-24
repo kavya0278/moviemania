@@ -1,0 +1,49 @@
+<div class="container">
+    <!--truthee. not undefined, not true, not empty string, array that is not zero -->
+    <!-- if it is anything it will show -->
+    <!-- since model.error is undefined it will show -->
+    <!-- ng-showalert is programatically muted-->
+
+    <!-- ng-if gives same thing. but it is only added if it is a truthee-->
+    <div ng-if="model.error"
+         class="alert alert-danger">
+        {{model.error}}
+    </div>
+
+
+
+    <h1>Login</h1>
+
+    <form novalidate name="model.myform">
+    <input ng-model="username"
+           placeholder="username"
+           name="username"
+           type="text"
+           class="form-control"
+           required/>
+        <span class="alert-class"
+              ng-show="model.myform.username.$invalid">{{model.alert}}</span>
+
+    <input ng-model="password"
+           placeholder="password"
+           name="password"
+           type="password"
+           class="form-control"
+           required/>
+ <span class="alert-class"
+       ng-show="model.myform.password.$invalid">{{model.alert}}</span>
+
+    <button ng-click="model.login(username,password)"
+       class="btn btn-primary btn-block" type="submit">Login</button>
+    </form>
+
+    <p></p>
+    <a class="btn btn-success btn-block"
+       href="#/register">Register</a>
+
+    <a href="/auth/facebook" class="btn btn-primary btn-block">
+        <span class="fa fa-facebook"></span>
+        Facebook
+    </a>
+
+</div>

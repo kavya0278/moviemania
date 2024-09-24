@@ -1,0 +1,60 @@
+
+<!--Header-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!--Left arrow-->
+        <p class="navbar-text pull-left">
+            <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page" class="navbar-link">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </p>
+        <span>
+        <!--heading on the nav bar-->
+        <p class="navbar-header pull-left">
+            <a class="navbar-brand thick">
+                <b>Widgets</b>
+            </a>
+        </p>
+        </span>
+        <!--tick mark-->
+        <p class="navbar-text pull-right">
+            <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget/new" class="navbar-link">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+        </p>
+
+    </div>
+</nav>
+
+
+<wam-sortable data="model">
+
+</wam-sortable>
+
+
+    <!-- Footer -->
+
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+            <!--Play Symbol-->
+            <p class="navbar-text pull-left">
+                <a href="#">
+                    <span class="glyphicon glyphicon-play"></span>
+                </a>
+            <!--Eye Symbol-->
+                <a href="#">
+                    <span class="glyphicon glyphicon-eye-open nudge-right-10px"></span>
+                </a>
+            </p>
+
+            <!--User Symbol-->
+            <p class="navbar-text pull-right">
+                <a href="#/user">
+                    <span class="glyphicon glyphicon-user"></span>
+                </a>
+            </p>
+
+        </div>
+    </nav>
+</div>
+
